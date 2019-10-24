@@ -1,0 +1,25 @@
+
+.k1{
+  margin-top: 20px;
+  font-weight: lighter;
+}.k3{
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+}
+.k2{
+  margin: 5px;
+  width: 150px;
+  background-color: #4db6ac;
+  color: white;
+  font-weight: bold;
+
+}
+.k4{
+  color:black;
+  background-color: #76ff03;
+  margin-bottom: 20px;
+}
+.k5{
+  margin-top: 25px;
+}

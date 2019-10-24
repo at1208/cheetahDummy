@@ -1,0 +1,29 @@
+.i2{
+  margin: 5px;
+  width: 150px;
+  background-color: #4db6ac;
+  color: white;
+  font-weight: bold;
+
+}
+
+.i4{
+  background-color: #b3e5fc;
+
+  margin-bottom: 20px;
+}
+
+
+.i3{
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+}
+
+.i1{
+  margin-top: 20px;
+  font-weight: lighter;
+}
+.i5{
+  margin-top: 25px;
+}

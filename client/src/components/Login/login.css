@@ -1,0 +1,18 @@
+.b1{
+ margin-top: 100px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+.b2{
+  margin-top: 20px;
+  background-color: #1e88e5;
+  color: white;
+}
+
+.b3{
+  height: 35px;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+}

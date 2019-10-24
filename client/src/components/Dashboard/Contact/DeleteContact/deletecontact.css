@@ -1,0 +1,25 @@
+
+.l1{
+  margin-top: 20px;
+  font-weight: lighter;
+}.l3{
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+}
+.l2{
+  margin: 5px;
+  width: 150px;
+  background-color: #4db6ac;
+  color: white;
+  font-weight: bold;
+
+}
+.l4{
+  color: white;
+  background-color: #ff3d00;
+  margin-bottom: 20px;
+}
+.l5{
+  margin-top: 25px;
+}

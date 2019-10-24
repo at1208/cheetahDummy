@@ -1,0 +1,28 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width:100%;
+
+}
+th{
+  background-color:#00857c
+}
+td, th {
+  border: 1px solid #4f9a94;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #80cbc4;
+}
+.j1{
+  margin-top: 20px;
+  font-weight: lighter;
+}
+.j2{
+  margin-top: 25px;
+}
+.j3{
+  margin-bottom: 50px;
+}
