@@ -26,6 +26,6 @@ app.get('/login/:emailID/:password', async (req,res) => {
   if(userEmail == req.params.emailID && userPass == req.params.password){
     return res.send('Successfull Login!')
   }
-  return res.send("incorrect Email or Password")
+  return res.status(404).send("incorrect Email or Password")
 })
 }
