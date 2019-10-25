@@ -5,4 +5,4 @@ const AddContactSchema = new mongoose.Schema({
   name: { type: String, required: true },
   ph: { type: Number, required: true },
 })
-mongoose.model('Contacts',AddContactSchema)
+mongoose.model('AddContacts',AddContactSchema)

@@ -6,10 +6,13 @@ app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 const mongoose = require('mongoose')
-const db = require('./config/db')
+const db = require('./Config/db')
 
-require('./models/addcontactModel')
-require('./Routes/route')(app)
+require('./Models/addcontactModel')
+require('./Routes/contactRoute')(app)
+
+require('./Models/userModel')
+require('./Routes/userRoute')(app)
 
 
 mongoose.connect(db.database, { useUnifiedTopology: true })

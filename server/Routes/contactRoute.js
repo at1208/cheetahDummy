@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 
-const contacts = mongoose.model('Contacts')
+const contacts = mongoose.model('AddContacts')
 module.exports = (app) => {
 
 
