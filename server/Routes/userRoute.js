@@ -16,4 +16,16 @@ app.post('/signup', async (req,res) => {
 const result  = await newUser.save()
 res.status(200).send(result)
 })
+
+app.get('/login/:emailID/:password', async (req,res) => {
+
+  const userInDB = await user.find({ emailID: req.params.emailID })
+  const userEmail = userInDB.map(user => user.emailID)
+  const userPass = userInDB.map(user => user.password)
+
+  if(userEmail == req.params.emailID && userPass == req.params.password){
+    return res.send('Successfull Login!')
+  }
+  return res.send("incorrect Email or Password")
+})
 }
