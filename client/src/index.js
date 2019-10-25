@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route} from 'react-router-dom'
 import App from './components/app';
 import Login from './components/Login/login'
+import Signup from './components/Signup/signup'
 import Dashboard from './components/Dashboard/dashboard'
 import Contact from './components/Dashboard/Contact/contact'
 import AddContact from './components/Dashboard/Contact/AddContact/addcontact'
@@ -11,10 +12,12 @@ import UpdateContact from './components/Dashboard/Contact/UpdateContact/updateco
 import DeleteContact from './components/Dashboard/Contact/DeleteContact/deletecontact'
 
 
+
 ReactDOM.render(
    <BrowserRouter>
       <Route path='/' exact component={App} />
       <Route path='/login' component={Login} />
+      <Route path='/signup' component={Signup} />
       <Route path='/dashboard'   component={Dashboard} />
       <Route path='/dashboard/contact'   component={Contact} />
       <Route path='/dashboard/contact/addcontact'   component={AddContact} />

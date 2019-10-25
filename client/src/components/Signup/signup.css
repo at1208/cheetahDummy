@@ -1,42 +1,30 @@
-.b1{
+.n2{
+  background-color: #28a745;
+}
+.n1{
  margin-top: 100px;
  padding-top: 20px;
  padding-bottom: 20px;
  padding-left: 20px;
  padding-right: 20px;
+
 }
-
-.b2{
-  margin-top: 20px;
-
-  background-color: #428bca;
-  color: white;
-  padding: 10px;
-}
-
-.b3{
+.n3{
   height: 35px;
   border-color: black;
   border-style: solid;
   border-width: thin;
   margin: 5px;
 }
-.b4{
+.n4{
   color: #428bca;
   font-size: 23px;
   font-weight: lighter;
 }
-.btn{
-  border-radius: 0px;
-}
- 
-.b5{
+.n5{
   color: #e64a19;
   font-size: 50px;
 }
-.b6{
-  background-color: #abbac3;
-  color: white;
-  padding: 6px;
-  margin-top: 20px;
+.card{
+ 
 }
