@@ -14,6 +14,6 @@ app.post('/signup', async (req,res) => {
   })
 
 const result  = await newUser.save()
-res.send(result)
+res.status(200).send(result)
 })
 }
