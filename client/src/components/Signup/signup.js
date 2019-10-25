@@ -13,7 +13,32 @@ class Signup extends Component {
    password: ''
  }
 
+CreateNewUser = (e) => {
+ e.preventDefault()
+
+ fetch('http://localhost:5000/signup', {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+          "firstName":this.state.firstName, "lastName": this.state.lastName, "emailID": this.state.emailID, "phoneNumber": this.state.phoneNumber,"password":this.state.password
+          })
+        }).then(res => {
+            if (res.ok) {
+              return res.json();
+            } else {
+              throw Error(res.statusText);
+            }
+          })
+          .then(json =>  console.log(json))
+      .catch( err => console.log(err))
+ }
+
+
  render(){
+
    return <div>
    <Header />
    <div className='card container n1 col-md-4 shadow'>
@@ -29,7 +54,7 @@ class Signup extends Component {
            <input className='n3 text-center'placeholder='Password'onChange={(e) => this.setState({ password: e.target.value })} value={this.state.password}/>
 
 
-           <Link to='/dashboard'><button className='btn btn-block n2 '>Sign Up Now</button></Link>
+           <Link to='/dashboard'><button className='btn btn-block n2 ' onClick={this.CreateNewUser}>Sign Up Now</button></Link>
 
 
 
